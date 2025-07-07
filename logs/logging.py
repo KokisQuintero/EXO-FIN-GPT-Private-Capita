@@ -1,0 +1,1 @@
+def log_decision(event): pass
