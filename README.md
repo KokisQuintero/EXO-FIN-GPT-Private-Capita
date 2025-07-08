@@ -7,6 +7,11 @@ Sistema de simulación y backtesting financiero con endpoints REST. Calcula ROI 
 pip install -r requirements.txt
 ```
 
+### Ejecutar servidor
+```bash
+bash start.sh
+```
+
 ### Ejecutar pruebas
 ```bash
 pytest -q
@@ -21,6 +26,11 @@ python src/simulator/simulate_market.py
 Accede al manifiesto:
 ```
 https://<tu-app>.railway.app/.well-known/ai-plugin.json
+```
+
+La documentación REST se expone en:
+```
+https://<tu-app>.railway.app/openapi.yaml
 ```
 
 Los endpoints disponibles se documentan en `openapi.yaml` e incluyen `/predict`, `/evaluate`, `/risk` y `/health`.
