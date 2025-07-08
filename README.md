@@ -24,6 +24,7 @@ https://<tu-app>.railway.app/.well-known/ai-plugin.json
 ```
 
 Los endpoints disponibles se documentan en `openapi.yaml` e incluyen `/predict`, `/evaluate`, `/risk` y `/health`.
+El archivo de especificación puede consultarse directamente desde la API en `/openapi.yaml`, lo que permite registrar el plugin de forma sencilla.
 
 Para ejecutar el servicio de la API localmente usa:
 ```bash
