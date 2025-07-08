@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import FileResponse
 from exo_fin_gpt.core.backtesting import run_backtest
 
 app = FastAPI()
@@ -30,3 +31,9 @@ def evaluate():
     except FileNotFoundError:
         content = 'No report available'
     return {'report': content}
+
+
+@app.get('/openapi.yaml', include_in_schema=False)
+def serve_openapi():
+    """Serve the static OpenAPI specification for plugin use."""
+    return FileResponse('openapi.yaml', media_type='text/yaml')
