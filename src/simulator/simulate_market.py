@@ -1,7 +1,12 @@
 import sys
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).resolve().parents[2]))
+root = Path(__file__).resolve().parents[2]
+sys.path.append(str(root))
+
+# Ensure output directories exist when executed standalone
+(root / 'logs').mkdir(exist_ok=True)
+(root / 'reports').mkdir(exist_ok=True)
 
 import numpy as np
 from exo_fin_gpt.core.backtesting import run_backtest
