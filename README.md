@@ -31,6 +31,7 @@ Para ejecutar el servicio de la API localmente usa:
 ```bash
 bash start.sh
 ```
+El script lanza `uvicorn` para servir la aplicación en `http://localhost:8000`.
 
 ## Crear el proyecto desde el ZIP
 1. Descomprimir el archivo `EXO-FIN-GPT-Private-Capital.zip` y entrar al directorio.
