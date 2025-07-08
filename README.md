@@ -7,6 +7,11 @@ Sistema de simulación y backtesting financiero con endpoints REST. Calcula ROI 
 pip install -r requirements.txt
 ```
 
+## Ejecutar pruebas
+```bash
+pytest -q
+```
+
 ## Ejecutar simulación
 ```bash
 python src/simulator/simulate_market.py
@@ -24,3 +29,11 @@ Los endpoints están documentados en `openapi.yaml` y expuestos vía REST:
 ```bash
 bash start.sh
 ```
+
+### Crear el proyecto desde ZIP
+Descomprimir `EXO-FIN-GPT-Private-Capital.zip` y ejecutar:
+```bash
+mkdir -p .well-known logs reports tests src/simulator exo_fin_gpt/core
+touch logs/narrative_trace.jsonl reports/predictivity_report.md
+```
+Luego implemente los módulos y archivos descritos en la documentación.
