@@ -1,3 +1,4 @@
+import os
 import sys
 from pathlib import Path
 
@@ -7,6 +8,9 @@ import numpy as np
 from exo_fin_gpt.core.backtesting import run_backtest
 from logs.logging import log_decision
 
+
+os.makedirs("logs", exist_ok=True)
+os.makedirs("reports", exist_ok=True)
 
 np.random.seed(42)
 prices = [100]

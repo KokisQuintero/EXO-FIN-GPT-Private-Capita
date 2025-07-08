@@ -1,17 +1,17 @@
 openapi: 3.0.1
 info:
-  title: EXO-FIN-GPT
+  title: EXO-FIN-GPT API
   version: "1.0"
 paths:
   /predict:
     post:
-      summary: "Generar predicción reflexiva"
-  /risk:
-    get:
-      summary: "Consultar riesgo del portafolio"
+      summary: Ejecutar predicción ROI y Sharpe
   /evaluate:
     get:
-      summary: "Resultados del simulador"
+      summary: Mostrar resultados simulados
+  /risk:
+    get:
+      summary: Evaluar riesgo de inversión
   /health:
     get:
-      summary: "Estado del sistema"
+      summary: Verificar estado del sistema

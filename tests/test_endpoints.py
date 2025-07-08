@@ -13,3 +13,8 @@ def test_health():
     r = client.get('/health')
     assert r.status_code == 200
     assert r.json() == {'status': 'ok'}
+
+
+def test_openapi():
+    r = client.get('/openapi.yaml')
+    assert r.status_code == 200
