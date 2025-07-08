@@ -25,6 +25,11 @@ https://<tu-app>.railway.app/.well-known/ai-plugin.json
 
 Los endpoints disponibles se documentan en `openapi.yaml` e incluyen `/predict`, `/evaluate`, `/risk` y `/health`.
 
+Para ejecutar el servicio de la API localmente usa:
+```bash
+bash start.sh
+```
+
 ## Crear el proyecto desde el ZIP
 1. Descomprimir el archivo `EXO-FIN-GPT-Private-Capital.zip` y entrar al directorio.
 2. Crear la estructura base:
