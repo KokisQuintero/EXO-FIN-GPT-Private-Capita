@@ -1,3 +1,8 @@
+import sys
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parents[2]))
+
 import numpy as np
 from exo_fin_gpt.core.backtesting import run_backtest
 from logs.logging import log_decision
