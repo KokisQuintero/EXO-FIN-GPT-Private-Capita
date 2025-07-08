@@ -2,6 +2,8 @@ openapi: 3.0.1
 info:
   title: EXO-FIN-GPT API
   version: "1.0"
+servers:
+  - url: /
 paths:
   /predict:
     post:

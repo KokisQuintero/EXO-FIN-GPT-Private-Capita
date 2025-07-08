@@ -16,6 +16,8 @@ bash start.sh
 ```bash
 pytest -q
 ```
+Las pruebas verifican `/health`, `/openapi.yaml`, `/.well-known/ai-plugin.json`,
+`/predict`, `/risk` y `/evaluate`.
 
 ## Ejecutar simulación
 ```bash
