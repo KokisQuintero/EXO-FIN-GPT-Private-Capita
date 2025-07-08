@@ -24,6 +24,7 @@ El script genera `reports/predictivity_report.md` con las métricas simuladas.
 ### API
 Los endpoints están documentados en `openapi.yaml` y expuestos vía REST:
 `/predict`, `/evaluate`, `/risk`, `/health`.
+El archivo puede consultarse directamente desde la API en `/openapi.yaml` para facilitar el registro del plugin.
 
 ### Ejecución local
 ```bash
