@@ -1,0 +1,12 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "EXO-FIN-GPT",
+  "name_for_model": "exo_fin_gpt",
+  "description_for_human": "Plugin financiero reflexivo con simulación de ROI.",
+  "description_for_model": "Simula inversiones, calcula ROI y Sharpe, registra decisiones JSONL.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://<tu-app>.railway.app/openapi.yaml"
+  }
+}

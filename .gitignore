@@ -1,0 +1,4 @@
+__pycache__/
+logs/narrative_trace.jsonl
+reports/
+venv/
