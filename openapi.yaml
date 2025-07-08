@@ -5,13 +5,13 @@ info:
 paths:
   /predict:
     post:
-      summary: Predicción con ROI y Sharpe
+      summary: Ejecuta predicción con ROI y Sharpe
   /evaluate:
     get:
-      summary: Resultado de la simulación
+      summary: Resultados de simulación
   /risk:
     get:
-      summary: Evaluación del portafolio
+      summary: Riesgo del portafolio
   /health:
     get:
       summary: Estado del sistema

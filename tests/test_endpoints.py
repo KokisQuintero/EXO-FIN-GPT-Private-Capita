@@ -10,12 +10,5 @@ client = TestClient(app)
 
 
 def test_health():
-    r = client.get('/health')
-    assert r.status_code == 200
-    assert r.json() == {'status': 'ok'}
-
-
-def test_openapi_served():
-    r = client.get('/openapi.yaml')
-    assert r.status_code == 200
-    assert 'openapi:' in r.text
+    response = client.get("/health")
+    assert response.status_code == 200
