@@ -16,6 +16,7 @@ pytest -q
 ```bash
 python src/simulator/simulate_market.py
 ```
+El script genera `reports/predictivity_report.md` con los valores de ROI y Sharpe calculados.
 
 ## Activación desde ChatGPT
 Accede al manifiesto:
@@ -23,8 +24,8 @@ Accede al manifiesto:
 https://<tu-app>.railway.app/.well-known/ai-plugin.json
 ```
 
-Los endpoints disponibles se documentan en `openapi.yaml` e incluyen `/predict`, `/evaluate`, `/risk` y `/health`.
-El archivo de especificación puede consultarse directamente desde la API en `/openapi.yaml`, lo que permite registrar el plugin de forma sencilla.
+## API Endpoints
+Los endpoints disponibles se documentan en `openapi.yaml` e incluyen `/predict`, `/evaluate`, `/risk` y `/health`. El archivo de especificación puede consultarse directamente desde la API en `/openapi.yaml`, lo que permite registrar el plugin de forma sencilla.
 
 Para ejecutar el servicio de la API localmente usa:
 ```bash
