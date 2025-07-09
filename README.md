@@ -6,6 +6,8 @@ Sistema de simulación y backtesting financiero con endpoints REST. Calcula ROI 
 
 ## Instalación
 ```bash
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
