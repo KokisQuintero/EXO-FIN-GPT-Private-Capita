@@ -44,6 +44,7 @@ Durante el desarrollo puedes verificarlo localmente con:
 ```
 curl http://localhost:8000/.well-known/ai-plugin.json
 ```
+Este archivo permite registrar el plugin en ChatGPT y debe estar disponible también en producción.
 
 La documentación REST se expone en:
 
