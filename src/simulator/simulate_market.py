@@ -10,7 +10,7 @@ sys.path.append(str(root))
 
 import numpy as np
 from exo_fin_gpt.core.backtesting import run_backtest
-from logs.logging import log_decision
+from logs.logging import log_event
 
 
 np.random.seed(42)
@@ -19,7 +19,7 @@ for _ in range(12):
     prices.append(prices[-1] * (1 + np.random.normal(0.2, 0.1)))
 
 metrics = run_backtest(np.array(prices))
-log_decision({"event": "simulate_market", "metrics": metrics})
+log_event({"event": "simulate_market", "metrics": metrics})
 
 with open(root / "reports" / "predictivity_report.md", "w") as f:
     f.write(

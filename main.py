@@ -21,3 +21,8 @@ def serve_openapi():
 def serve_manifest():
     """Serve the plugin manifest for ChatGPT."""
     return FileResponse('.well-known/ai-plugin.json', media_type='application/json')
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)

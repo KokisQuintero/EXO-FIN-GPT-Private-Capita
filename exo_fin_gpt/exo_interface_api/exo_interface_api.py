@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from exo_fin_gpt.core.backtesting import run_backtest
-from logs.logging import log_decision
+from logs.logging import log_event
 
 router = APIRouter()
 
@@ -8,7 +8,7 @@ router = APIRouter()
 def predict(prices: list[float]):
     """Return ROI and Sharpe metrics for a list of prices."""
     metrics = run_backtest(prices)
-    log_decision({"event": "predict", "prices": prices, "metrics": metrics})
+    log_event({"event": "predict", "prices": prices, "metrics": metrics})
     return metrics
 
 @router.get('/risk')
@@ -31,12 +31,12 @@ def evaluate():
 def explain(ticker: str):
     """Return a placeholder explanation for a given ticker."""
     explanation = f"Analysis of {ticker}: strategy based on simulated data."
-    log_decision({"event": "explain", "ticker": ticker})
+    log_event({"event": "explain", "ticker": ticker})
     return {"explanation": explanation}
 
 
 @router.post('/feedback')
 def feedback(note: dict):
     """Accept user feedback and log it."""
-    log_decision({"event": "feedback", "note": note})
+    log_event({"event": "feedback", "note": note})
     return {"status": "received"}
