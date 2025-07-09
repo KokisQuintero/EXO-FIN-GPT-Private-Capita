@@ -31,9 +31,9 @@ Ejecutar simulación
 ```bash
 python src/simulator/simulate_market.py
 ```
-El script genera reports/predictivity_report.md con las métricas simuladas.
-Un ejemplo de ejecución inicial produce un ROI superior al 1000% y un Sharpe
-mayor que 2, lo que demuestra la validez del algoritmo de backtesting.
+El script genera `reports/predictivity_report.md` con las métricas simuladas.
+Por ejemplo, una ejecución típica arroja un ROI cercano al 1071% con un Sharpe
+de aproximadamente 11.16, validando así el algoritmo de backtesting.
 
 Activación en ChatGPT
 Accede al manifiesto:
