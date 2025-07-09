@@ -57,9 +57,12 @@ https://<tu-app>.railway.app/openapi.yaml
 ```
 Los endpoints disponibles se documentan en `openapi.yaml` e incluyen:
 
-```
-/predict, /evaluate, /risk, /health, /explain/{ticker}, /feedback
-```
+- `/predict` – Calcula ROI y Sharpe para una serie de precios
+- `/evaluate` – Devuelve el informe de la última simulación
+- `/risk` – Estima de forma sencilla el riesgo del portafolio
+- `/health` – Comprueba que el servidor esté activo
+- `/explain/{ticker}` – Ofrece una explicación narrativa
+- `/feedback` – Registra comentarios para ajustar la estrategia
 
 Verifica también que el manifiesto del plugin esté disponible en:
 
