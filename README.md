@@ -79,3 +79,8 @@ Luego implemente los módulos y archivos descritos en la documentación.
 
 En Railway configura la variable de entorno `PORT` (por ejemplo `8080`) para que
 `start.sh` pueda exponer la API correctamente las 24 horas.
+
+Para verificar el correcto funcionamiento de todos los endpoints puedes ejecutar:
+```bash
+pytest -q
+```
