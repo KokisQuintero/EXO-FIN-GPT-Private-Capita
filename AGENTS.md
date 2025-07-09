@@ -1,25 +1,22 @@
-# AGENTS.md
+# AGENTS.md — Agentes Cognitivos de EXO-FIN-GPT
 
-Este archivo documenta los agentes semánticos, funciones deterministas y roles computacionales dentro de EXO-FIN-GPT.
+## /predict
+- Acción central de predicción.
+- Devuelve: JSON con decisión, ROI esperado, confianza.
 
-## Agente: exo_fin_gpt.predict()
-- Función: Proporciona predicciones financieras razonadas
-- Estructura: Input → Análisis → JSON output (ROI, explicación)
-- Traza: logs/narrative_trace.jsonl
+## /evaluate
+- Calcula métricas ROI y Sharpe Ratio usando backtesting.
 
-## Agente: exo_fin_gpt.explain()
-- Explica la predicción basada en eventos simulados o reales
+## /explain/{ticker}
+- Explicación semántica del razonamiento de inversión.
 
-## Agente: exo_fin_gpt.evaluate()
-- Calcula ROI y Sharpe ratio con base en eventos previos simulados
+## /feedback
+- Procesa retroalimentación del usuario y mejora decisiones.
 
-## Agente: exo_fin_gpt.feedback()
-- Registra comentarios del usuario para refinar el comportamiento
+## /risk
+- Estimación del drawdown y perfil de riesgo del activo.
 
-## Agente: exo_fin_gpt.risk()
-- Analiza la exposición y drawdown esperado del portafolio
+## /health
+- Verifica la salud del sistema y del servidor.
 
-## Activación
-- Manifest: `.well-known/ai-plugin.json`
-- Descripción: `openapi.yaml`
-- Hosting: Railway (FastAPI + Uvicorn)
+Cada agente se activa mediante un endpoint REST expuesto en OpenAPI y disponible en el manifiesto `.well-known/ai-plugin.json`.
