@@ -58,6 +58,7 @@ https://<tu-app>.railway.app/openapi.yaml
 ```
 Los endpoints disponibles se documentan en `openapi.yaml` e incluyen:
 
+Tambien puedes consultarlo localmente en http://localhost:8000/openapi.yaml.
 - `/predict` – Calcula ROI y Sharpe para una serie de precios
 - `/evaluate` – Devuelve el informe de la última simulación
 - `/risk` – Estima de forma sencilla el riesgo del portafolio
