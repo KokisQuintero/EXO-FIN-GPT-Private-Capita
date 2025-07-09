@@ -58,6 +58,12 @@ Los endpoints disponibles se documentan en `openapi.yaml` e incluyen:
 /predict, /evaluate, /risk, /health, /explain/{ticker}, /feedback
 ```
 
+Verifica también que el manifiesto del plugin esté disponible en:
+
+```bash
+curl http://localhost:8000/.well-known/ai-plugin.json
+```
+
 Crear el proyecto desde ZIP
 ```bash
 mkdir -p .well-known logs reports tests src/simulator exo_fin_gpt/core
