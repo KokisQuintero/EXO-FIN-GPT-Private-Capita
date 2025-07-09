@@ -10,7 +10,7 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-La lista incluye `httpx`, necesario para que las pruebas con `TestClient` funcionen.
+Nota: el archivo `requirements.txt` instala todas las dependencias, incluido `httpx`, necesario para que las pruebas con `TestClient` funcionen correctamente.
 
 Ejecutar servidor
 ```bash
