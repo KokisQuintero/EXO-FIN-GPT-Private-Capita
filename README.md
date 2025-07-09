@@ -16,11 +16,12 @@ Ejecutar servidor
 ```bash
 bash start.sh
 ```
-Una vez iniciado, puedes obtener la especificación OpenAPI en:
+Una vez iniciado, verifica que la API responda:
 ```bash
+curl http://localhost:8000/health
 curl http://localhost:8000/openapi.yaml
 ```
-El mismo archivo debe estar disponible en producción para poder registrar el plugin en ChatGPT.
+El archivo `openapi.yaml` también debe estar disponible en producción para poder registrar el plugin en ChatGPT.
 
 Ejecutar pruebas
 ```bash
