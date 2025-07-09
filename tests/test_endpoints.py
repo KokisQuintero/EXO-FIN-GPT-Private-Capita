@@ -26,3 +26,16 @@ def test_explain():
 def test_feedback():
     response = client.post("/feedback", json={"note": "good"})
     assert response.status_code == 200
+
+
+def test_predict():
+    prices = [100, 110, 100]
+    response = client.post("/predict", json=prices)
+    assert response.status_code == 200
+    data = response.json()
+    assert "roi" in data and "sharpe" in data
+
+
+def test_evaluate():
+    response = client.get("/evaluate")
+    assert response.status_code == 200
