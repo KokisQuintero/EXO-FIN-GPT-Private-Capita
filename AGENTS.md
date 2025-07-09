@@ -13,6 +13,9 @@ Este archivo documenta los agentes semánticos, funciones deterministas y roles 
 ## Agente: exo_fin_gpt.evaluate()
 - Calcula ROI y Sharpe ratio con base en eventos previos simulados
 
+## Agente: exo_fin_gpt.feedback()
+- Registra comentarios del usuario para refinar el comportamiento
+
 ## Activación
 - Manifest: `.well-known/ai-plugin.json`
 - Descripción: `openapi.yaml`
