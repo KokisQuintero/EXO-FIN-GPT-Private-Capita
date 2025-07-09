@@ -6,9 +6,15 @@ paths:
   /predict:
     post:
       summary: Ejecuta predicción con ROI y Sharpe
+  /explain/{ticker}:
+    get:
+      summary: Explica el razonamiento para un ticker
   /evaluate:
     get:
       summary: Resultados de simulación
+  /feedback:
+    post:
+      summary: Recibir retroalimentación del usuario
   /risk:
     get:
       summary: Riesgo del portafolio

@@ -16,3 +16,13 @@ def test_health():
 def test_openapi():
     response = client.get("/openapi.yaml")
     assert response.status_code == 200
+
+
+def test_explain():
+    response = client.get("/explain/ABC")
+    assert response.status_code == 200
+
+
+def test_feedback():
+    response = client.post("/feedback", json={"note": "good"})
+    assert response.status_code == 200
