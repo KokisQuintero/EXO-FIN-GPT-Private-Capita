@@ -13,6 +13,10 @@ Ejecutar servidor
 ```bash
 bash start.sh
 ```
+Una vez iniciado, puedes obtener la especificación OpenAPI en:
+```bash
+curl http://localhost:8000/openapi.yaml
+```
 
 Ejecutar pruebas
 ```bash
