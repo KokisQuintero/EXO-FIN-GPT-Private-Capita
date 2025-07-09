@@ -37,6 +37,11 @@ Accede al manifiesto:
 ```
 https://<tu-app>.railway.app/.well-known/ai-plugin.json
 ```
+Durante el desarrollo puedes verificarlo localmente con:
+
+```
+curl http://localhost:8000/.well-known/ai-plugin.json
+```
 
 La documentación REST se expone en:
 
