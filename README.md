@@ -51,7 +51,7 @@ https://<tu-app>.railway.app/openapi.yaml
 Los endpoints disponibles se documentan en openapi.yaml e incluyen:
 
 ```
-/predict, /evaluate, /risk, /explain/{ticker}, /feedback, /health
+/predict, /evaluate, /explain/{ticker}, /feedback, /health
 ```
 
 Crear el proyecto desde ZIP

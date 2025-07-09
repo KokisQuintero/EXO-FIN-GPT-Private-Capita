@@ -11,11 +11,6 @@ def predict(prices: list[float]):
     log_event({"event": "predict", "prices": prices, "metrics": metrics})
     return metrics
 
-@router.get('/risk')
-def risk():
-    """Return a placeholder risk metric."""
-    return {'risk': 'low'}
-
 @router.get('/evaluate')
 def evaluate():
     """Return contents of the latest report if available."""

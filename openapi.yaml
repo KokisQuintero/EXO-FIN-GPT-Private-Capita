@@ -15,9 +15,6 @@ paths:
   /feedback:
     post:
       summary: Recibir retroalimentación del usuario
-  /risk:
-    get:
-      summary: Riesgo del portafolio
   /health:
     get:
       summary: Estado del sistema
