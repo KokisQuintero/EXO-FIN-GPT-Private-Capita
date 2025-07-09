@@ -34,3 +34,10 @@ def test_predict():
 def test_evaluate():
     response = client.get("/evaluate")
     assert response.status_code == 200
+
+
+def test_explain_and_feedback():
+    explain_resp = client.get("/explain/TSLA")
+    assert explain_resp.status_code == 200
+    feed_resp = client.post("/feedback", json={"note": "ok"})
+    assert feed_resp.status_code == 200
