@@ -27,6 +27,7 @@ Ejecutar pruebas
 ```bash
 pytest -q
 ```
+Si las pruebas indican "ModuleNotFoundError: httpx", ejecuta `pip install httpx`.
 
 Ejecutar simulación
 ```bash
