@@ -72,3 +72,6 @@ mkdir -p .well-known logs reports tests src/simulator exo_fin_gpt/core
 touch logs/narrative_trace.jsonl reports/predictivity_report.md
 ```
 Luego implemente los módulos y archivos descritos en la documentación.
+
+En Railway configura la variable de entorno `PORT` (por ejemplo `8080`) para que
+`start.sh` pueda exponer la API correctamente las 24 horas.
