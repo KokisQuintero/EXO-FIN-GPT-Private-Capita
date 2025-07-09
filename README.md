@@ -48,10 +48,10 @@ La documentación REST se expone en:
 ```
 https://<tu-app>.railway.app/openapi.yaml
 ```
-Los endpoints disponibles se documentan en openapi.yaml e incluyen:
+Los endpoints disponibles se documentan en `openapi.yaml` e incluyen:
 
 ```
-/predict, /evaluate, /risk, /health
+/predict, /evaluate, /risk, /health, /explain/{ticker}, /feedback
 ```
 
 Crear el proyecto desde ZIP
