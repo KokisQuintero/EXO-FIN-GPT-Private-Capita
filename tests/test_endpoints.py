@@ -18,13 +18,8 @@ def test_openapi():
     assert response.status_code == 200
 
 
-def test_explain():
-    response = client.get("/explain/ABC")
-    assert response.status_code == 200
-
-
-def test_feedback():
-    response = client.post("/feedback", json={"note": "good"})
+def test_risk():
+    response = client.get("/risk")
     assert response.status_code == 200
 
 
