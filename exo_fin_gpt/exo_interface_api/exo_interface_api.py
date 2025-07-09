@@ -1,8 +1,24 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, FastAPI
+from fastapi.responses import FileResponse
 from exo_fin_gpt.core.backtesting import run_backtest
 from logs.logging import log_event
 
 router = APIRouter()
+
+app = FastAPI()
+app.include_router(router)
+
+@app.get('/health')
+def health():
+    return {'status': 'ok'}
+
+@app.get('/openapi.yaml', include_in_schema=False)
+def serve_openapi():
+    return FileResponse('openapi.yaml', media_type='text/yaml')
+
+@app.get('/.well-known/ai-plugin.json', include_in_schema=False)
+def serve_manifest():
+    return FileResponse('.well-known/ai-plugin.json', media_type='application/json')
 
 @router.post('/predict')
 def predict(prices: list[float]):
