@@ -16,6 +16,9 @@ Este archivo documenta los agentes semánticos, funciones deterministas y roles 
 ## Agente: exo_fin_gpt.feedback()
 - Registra comentarios del usuario para refinar el comportamiento
 
+## Agente: exo_fin_gpt.risk()
+- Analiza la exposición y drawdown esperado del portafolio
+
 ## Activación
 - Manifest: `.well-known/ai-plugin.json`
 - Descripción: `openapi.yaml`
