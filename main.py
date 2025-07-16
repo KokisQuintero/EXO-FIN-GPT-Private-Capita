@@ -1,8 +1,15 @@
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
+from pydantic import BaseModel
+
 from exo_fin_gpt.core.backtesting import run_backtest
+from logs.logging import log_decision
 
 app = FastAPI()
+
+
+class PriceSeries(BaseModel):
+    prices: list[float]
 
 
 @app.get("/health")
@@ -11,8 +18,9 @@ def health():
 
 
 @app.post('/predict')
-def predict(prices: list[float]):
-    metrics = run_backtest(prices)
+def predict(data: PriceSeries):
+    metrics = run_backtest(data.prices)
+    log_decision({"event": "predict", "prices": data.prices, "metrics": metrics})
     return metrics
 
 

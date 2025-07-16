@@ -6,6 +6,9 @@ paths:
   /predict:
     post:
       summary: Ejecutar predicción ROI y Sharpe
+      responses:
+        '200':
+          description: Resultado exitoso de predicción
   /evaluate:
     get:
       summary: Mostrar resultados simulados
