@@ -24,6 +24,7 @@ paths:
   /feedback:
     post:
       summary: Recibe feedback del usuario
+      description: Almacena comentarios para refinar las decisiones futuras
   /health:
     get:
       summary: Estado del sistema

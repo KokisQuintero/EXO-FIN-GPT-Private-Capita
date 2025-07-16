@@ -20,6 +20,7 @@ Una vez iniciado, verifica que la API responda:
 ```bash
 curl http://localhost:8000/health
 curl http://localhost:8000/openapi.yaml
+curl http://localhost:8000/.well-known/ai-plugin.json
 ```
 El archivo `openapi.yaml` también debe estar disponible en producción para poder registrar el plugin en ChatGPT.
 
