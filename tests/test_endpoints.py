@@ -18,3 +18,11 @@ def test_health():
 def test_openapi():
     r = client.get('/openapi.yaml')
     assert r.status_code == 200
+
+
+def test_predict():
+    r = client.post('/predict', json={'prices': [100, 105, 110]})
+    assert r.status_code == 200
+    data = r.json()
+    assert 'roi' in data
+    assert data['roi'] > 0
