@@ -6,6 +6,7 @@ paths:
   /predict:
     post:
       summary: Ejecuta predicción con ROI y Sharpe
+      description: Calcula las métricas financieras para la serie de precios proporcionada
   /explain/{ticker}:
     get:
       summary: Explica la decisión para un ticker
