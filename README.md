@@ -88,3 +88,10 @@ Para verificar el correcto funcionamiento de todos los endpoints puedes ejecutar
 ```bash
 pytest -q
 ```
+
+Requisitos para validación GPT Plugin
+✔️ `openapi.yaml` accesible
+✔️ `ai-plugin.json` estructurado correctamente
+✔️ `pytest -q` sin errores
+✔️ `logs/narrative_trace.jsonl` generado por el simulador
+✔️ Plugin registrado desde ChatGPT
