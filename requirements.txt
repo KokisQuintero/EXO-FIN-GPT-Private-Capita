@@ -8,3 +8,6 @@ pydantic
 scipy
 pytest
 python-dotenv
+jsonschema
+yfinance
+sentence-transformers
