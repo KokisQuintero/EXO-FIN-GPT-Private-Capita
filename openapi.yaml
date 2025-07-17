@@ -1,7 +1,10 @@
 openapi: 3.0.1
 info:
   title: EXO-FIN-GPT API
-  version: "1.0"
+  version: 1.0.0
+  description: API REST para simulación financiera con predicciones, riesgo y aprendizaje adaptativo.
+servers:
+  - url: https://web-production-2316.up.railway.app
 paths:
   /predict:
     post:

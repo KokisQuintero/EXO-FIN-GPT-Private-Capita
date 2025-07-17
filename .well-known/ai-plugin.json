@@ -7,6 +7,6 @@
   "auth": { "type": "none" },
   "api": {
     "type": "openapi",
-    "url": "https://<tu-app>.railway.app/openapi.yaml"
+    "url": "https://web-production-2316.up.railway.app/openapi.yaml"
   }
 }

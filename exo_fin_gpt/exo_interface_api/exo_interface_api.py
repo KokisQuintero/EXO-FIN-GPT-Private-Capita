@@ -1,7 +1,9 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, FastAPI
+from fastapi.responses import FileResponse
 from exo_fin_gpt.core.backtesting import run_backtest
 from logs.logging import log_event
 
+app = FastAPI()
 router = APIRouter()
 
 @router.post('/predict')
@@ -43,3 +45,24 @@ def feedback(note: dict):
     """Accept user feedback and log it."""
     log_event({"event": "feedback", "note": note})
     return {"status": "received"}
+
+
+app.include_router(router)
+
+
+@app.get('/health')
+def health():
+    """Simple health check."""
+    return {'status': 'ok'}
+
+
+@app.get('/openapi.yaml', include_in_schema=False)
+def serve_openapi():
+    """Serve the OpenAPI specification."""
+    return FileResponse('openapi.yaml', media_type='text/yaml')
+
+
+@app.get('/.well-known/ai-plugin.json', include_in_schema=False)
+def serve_manifest():
+    """Serve the plugin manifest."""
+    return FileResponse('.well-known/ai-plugin.json', media_type='application/json')
