@@ -84,6 +84,11 @@ Luego implemente los módulos y archivos descritos en la documentación.
 En Railway configura la variable de entorno `PORT` (por ejemplo `8080`) para que
 `start.sh` pueda exponer la API correctamente las 24 horas.
 
+### Despliegue en Railway
+1. Crea un proyecto en Railway e instala las dependencias con el `Procfile` provisto.
+2. Asegura que el comando de inicio sea `bash start.sh` y que la variable `PORT` esté definida.
+3. Verifica que el manifiesto se sirva en `https://<tu-app>.railway.app/.well-known/ai-plugin.json` y que la documentación se encuentre en `https://<tu-app>.railway.app/openapi.yaml`.
+
 Para verificar el correcto funcionamiento de todos los endpoints puedes ejecutar:
 ```bash
 pytest -q
