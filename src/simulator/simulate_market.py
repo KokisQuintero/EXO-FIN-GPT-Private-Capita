@@ -20,6 +20,7 @@ for _ in range(12):
 
 metrics = run_backtest(np.array(prices))
 assert isinstance(metrics["roi"], (int, float)) and metrics["roi"] > 0, "ROI invalido"
+assert metrics["sharpe"] > 1.0, "Sharpe ratio too low"
 log_event({"event": "simulate_market", "metrics": metrics})
 
 with open(root / "reports" / "predictivity_report.md", "w") as f:
