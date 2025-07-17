@@ -1,6 +1,6 @@
 # EXO-FIN-GPT – Private Algorithmic Capital
 
-Sistema de simulación y backtesting financiero con endpoints REST. Calcula ROI y ratio Sharpe y registra eventos en `logs/narrative_trace.jsonl`. El plugin se despliega en Railway para operación 24/7 y es activable desde ChatGPT.
+Sistema de simulación y backtesting financiero con endpoints REST. Calcula ROI y ratio Sharpe y registra eventos en `logs/narrative_trace.jsonl`. El plugin se despliega en Railway para operación 24/7 y es activable desde ChatGPT. El manifiesto del plugin se encuentra en `.well-known/ai-plugin.json`.
 La especificacion OpenAPI esta disponible en `/openapi.yaml` para registrar el plugin.
 
 ---
