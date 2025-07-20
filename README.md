@@ -100,3 +100,4 @@ Requisitos para validación GPT Plugin
 ✔️ `pytest -q` sin errores
 ✔️ `logs/narrative_trace.jsonl` generado por el simulador
 ✔️ Plugin registrado desde ChatGPT
+# Ensure openapi and manifest reachable after starting the server.
