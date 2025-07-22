@@ -43,7 +43,7 @@ Activación en ChatGPT
 Accede al manifiesto:
 
 ```
-https://<tu-app>.railway.app/.well-known/ai-plugin.json
+https://web-production-2316.up.railway.app/.well-known/ai-plugin.json
 ```
 Durante el desarrollo puedes verificarlo localmente con:
 
@@ -56,7 +56,7 @@ Para completar el registro abre la URL del manifiesto en tu navegador y sigue la
 La documentación REST se expone en:
 
 ```
-https://<tu-app>.railway.app/openapi.yaml
+https://web-production-2316.up.railway.app/openapi.yaml
 ```
 Los endpoints disponibles se documentan en `openapi.yaml` e incluyen:
 
@@ -87,7 +87,7 @@ En Railway configura la variable de entorno `PORT` (por ejemplo `8080`) para que
 ### Despliegue en Railway
 1. Crea un proyecto en Railway e instala las dependencias con el `Procfile` provisto.
 2. Asegura que el comando de inicio sea `bash start.sh` y que la variable `PORT` esté definida.
-3. Verifica que el manifiesto se sirva en `https://<tu-app>.railway.app/.well-known/ai-plugin.json` y que la documentación se encuentre en `https://<tu-app>.railway.app/openapi.yaml`.
+3. Verifica que el manifiesto se sirva en `https://web-production-2316.up.railway.app/.well-known/ai-plugin.json` y que la documentación se encuentre en `https://web-production-2316.up.railway.app/openapi.yaml`.
 
 Para verificar el correcto funcionamiento de todos los endpoints puedes ejecutar:
 ```bash
