@@ -101,3 +101,4 @@ Requisitos para validación GPT Plugin
 ✔️ `logs/narrative_trace.jsonl` generado por el simulador
 ✔️ Plugin registrado desde ChatGPT
 # Ensure openapi and manifest reachable after starting the server.
+\nPara detener el servidor usa Ctrl+C.
